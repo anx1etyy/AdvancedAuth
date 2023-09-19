@@ -1,0 +1,7 @@
+name: AdvancedAuth
+version: 1.0.0
+author: Anx1ety
+description: Complemento para autenticarse sin xbox live
+
+main: anx1ety\auth\Loader
+api: 4.0.0
