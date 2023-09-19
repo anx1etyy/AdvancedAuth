@@ -29,6 +29,11 @@ final class Auth {
                 return;
             }
             
+            if (strlen($result[1]) === 0){
+                $this->openUI($player);
+                return;
+            }
+
             if ($this->isRegistered($player)){
                 
                 if ($result[1] !== $this->getPassword($player)){
