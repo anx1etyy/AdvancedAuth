@@ -28,7 +28,7 @@ class Listener implements L {
         
         if (Loader::getInstance()->getAuth()->getLoginByIP($player)){
             
-            if (strtolower($player->getNetworkSession()->getIp()) === Loader::getInstance()->getAuth()->getLastIP()){
+            if (strtolower($player->getNetworkSession()->getIp()) === Loader::getInstance()->getAuth()->getLastIP($player)){
                 
                 Loader::getInstance()->getAuth()->setAuthenticated($player);
                 $player->sendMessage(Loader::getInstance()->messages->get("successfully-logged-by-ip"));
